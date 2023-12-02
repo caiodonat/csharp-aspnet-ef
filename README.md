@@ -33,23 +33,53 @@ ProjectName/
 
 ### Main Techs
 
-- Language : `C#` (7.0.0)
-- Web Application framework : `ASP.NET` (7.0.0)
+- Language : `C#` (7.0.401)
+- Web Application framework : `ASP.NET` (7.0.11)
 - Database : `PostgreSQL` (15.4)
 - Object-Relational Mapping (ORM) : `Entity Framework` (7.0.12)
-- Build : `MS...` ()
+- Build : `MSBuild` (17.7.3)
 
 ### Libraries
 
-- Package manager : `NuGet` ()
+- Package manager : `NuGet` (6.7.0)
 - Schema validation : `Fluent Validator` ()
-- API documentation : `` (Swagger) | `OpenAPI` (3.0.3)
+- API documentation : `Swagger` () | `OpenAPI` (3.0.3)
 - Technical documentation : `docfx` (?)
 
 ### Development Environment
 
 - OS : `Win` (11) | `WSL 2` (Ubuntu 22.04) | `Dev Container`
 - IDE : `VS Code` (^1.83.0)
+
+---
+
+## Getting Started Guide
+
+After clone repo, is require install all dependencies (packages), like `npm i` you can use:
+
+```bash
+dotnet restore
+```
+
+Some commands require Entity Framework CLI (`dotnet-ef`), you can install this "Tool" with:
+
+```bash
+dotnet tool install --global dotnet-ef --version 7.0.12
+```
+
+Apply all migration on Database
+
+```bash
+dotnet-ef database update
+```
+
+Run project:
+
+```bash
+donet watch run
+```
+
+---
 
 ---
 
