@@ -1,0 +1,9 @@
+{
+	"name": "csharp-aspnet-ef-docker",
+	"dockerComposeFile": "docker-compose.yaml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+	},
+	"postCreateCommand": "echo Successes started"
+}
